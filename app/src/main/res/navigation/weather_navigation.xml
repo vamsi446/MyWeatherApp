@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/weather_navigation"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/currentFragment">
+
+    <fragment
+        android:id="@+id/currentFragment"
+        android:name="com.cg.myweatherapp.CurrentFragment"
+        android:label="Current Forecast"
+        tools:layout="@layout/fragment_current"/>
+    <fragment
+        android:id="@+id/dailyFragment"
+        android:name="com.cg.myweatherapp.DailyFragment"
+        android:label="Daily Forecast"
+        tools:layout="@layout/fragment_daily_list"
+        />
+    <fragment
+        android:id="@+id/hourlyFragment"
+        android:name="com.cg.myweatherapp.HourlyFragment"
+        android:label="Hourly Forecast"
+        tools:layout="@layout/fragment_hourly_list"
+        />
+</navigation>
